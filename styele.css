@@ -25,7 +25,7 @@ header {
   background-color: #011c42;
   height: 12vh;
   align-items: center;
-  padding-left: 8vw;
+  padding-left: 6vw;
   font-family: "Windsurf secondary";
 
   text-transform: uppercase;
@@ -34,6 +34,23 @@ header {
 header a {
   font-size: 12px;
   font-weight: bold;
+}
+
+nav a {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #ffffff33;
+}
+
+nav a i {
+  transition: rotate 0.15s ease-in-out;
+}
+
+nav a:hover i {
+  rotate: 180deg;
 }
 
 .windsurf-logo {
@@ -66,18 +83,21 @@ nav {
   align-items: center;
   padding: 0 20px;
 }
-main{
-    background-color: #011c42;
+
+.nav-link-1 {
+  position: relative;
 }
-.wnbtn{
-    background-color: #34e8bb;
+
+.nav-link-1:hover .box-1 {
+  display: block;
 }
-.efbtn{
- background-color: #09254d;
-}
-main h1{
-    color: white;
-    font-family: "Windsurf primary";
-    font-size: 48px;
-    margin-top: 40px;
+
+.box-1 {
+  background-color: aquamarine;
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  top: 8vh;
+  left: -4px;
+  display: none;
 }
