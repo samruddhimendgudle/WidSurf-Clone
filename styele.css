@@ -75,6 +75,10 @@ nav a:hover i {
   width: 160px;
 }
 
+.mobile-windsurf-logo {
+  display: none;
+}
+
 nav {
   display: flex;
   gap: 40px;
@@ -189,4 +193,72 @@ main h1 {
   height: 8px;
   width: 8px;
   background-color: var(--secondary-color);
+}
+
+/* marquee section start */
+
+.marquee-section {
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  gap: 40px;
+  animation: marquee-animation 14s linear infinite;
+}
+
+@keyframes marquee-animation {
+  from {
+    translate: 0%;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+.marquee img {
+  width: 80px;
+}
+
+.mobile-options {
+  display: none;
+}
+
+/* header responsive code */
+
+@media (width <= 1200px) {
+  .windsurf-logo {
+    display: none;
+  }
+
+  .mobile-windsurf-logo {
+    display: block;
+    width: 40px;
+  }
+}
+
+@media (width <= 1024px) {
+  header {
+    height: 8vh;
+  }
+  nav {
+    display: none;
+  }
+
+  .header-last {
+    display: none;
+  }
+
+  .mobile-options {
+    display: block;
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
