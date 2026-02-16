@@ -229,36 +229,3 @@ main h1 {
 
 /* header responsive code */
 
-@media (width <= 1200px) {
-  .windsurf-logo {
-    display: none;
-  }
-
-  .mobile-windsurf-logo {
-    display: block;
-    width: 40px;
-  }
-}
-
-@media (width <= 1024px) {
-  header {
-    height: 8vh;
-  }
-  nav {
-    display: none;
-  }
-
-  .header-last {
-    display: none;
-  }
-
-  .mobile-options {
-    display: block;
-    background-color: var(--secondary-color);
-    height: 100%;
-    width: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
